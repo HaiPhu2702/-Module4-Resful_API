@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/bin/node /snap/node/6378/bin/yarn.js
+
+PATH: 
+  /home/haiphu/.local/share/umake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/haiphu/WebstormProjects/Module_4_Express_Nodejs/Restful-API/ThucHanh/API_OpenWeather_bao_thoi_tiet/node_modules/.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/haiphu/WebstormProjects/Module_4_Express_Nodejs/Restful-API/ThucHanh/API_OpenWeather_bao_thoi_tiet/package.json: Unexpected token y in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at /snap/node/6378/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/snap/node/6378/lib/cli.js:310:30)
+      at /snap/node/6378/lib/cli.js:321:13
+
+npm manifest: 
+  yarn{
+    "name": "typeorm-phonebook",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "rimraf dist && tsc -p tsconfig.build.json",
+      "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \\\"node dist/index.js\\\"",
+      "m:g": "yarn build && typeorm migration:generate -d dist/src/data-source.js",
+      "m:run": "yarn build && typeorm migration:run -d dist/src/data-source.js",
+      "m:revert": "typeorm migration:revert -d dist/src/data-source.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@types/express": "^4.17.13",
+      "rimraf": "^3.0.2",
+      "tsc": "^2.0.4",
+      "tsc-watch": "^5.0.3",
+      "typescript": "^4.7.4"
+    },
+    "dependencies": {
+      "axios": "^0.27.2",
+      "body-parser": "^1.20.0",
+      "express": "^4.18.1",
+      "multer": "^1.4.4",
+      "mysql": "^2.18.1",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "^0.3.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

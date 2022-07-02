@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Thời tiết Hà Nội</title>
+</head>
+<body>
+<h2>Thời tiết Hà Nội</h2>
+<% const today = new Date() %>
+<% const time = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear() %>
+<% const temp = data.main.temp - 273.15 %>
+
+<h3>Ngày: <%-time%></h3>
+<h3>Kiểu thời tiết: <%=data.weather[0].description%></h3>
+<h3>Nhiệt độ:<%-temp%></h3>
+<h3>Độ ẩm: <%=data.main.humidity%>%</h3>
+</body>
