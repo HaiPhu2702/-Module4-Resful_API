@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <title>Pokemon</title>
+</head>
+
+<body>
+<h2>List Pokemon</h2>
+
+        <%
+            dataPokemon.forEach((value, key) =>{%>
+            <ul>
+                <li># <%= key+1%></li>
+                <li>Name: <%= value.name %></li>
+                <img src="<%=value.url%>" alt="pokemon" width="100" height="50">
+
+            </ul>
+        <%})
+        %>
+
+
+
+<span><a href="?page=<%= page - 1%>">Prev</a></span>
+<span><%= page + 1%></span>
+<span><a href="?page=<%= page + 1%>">Next</a></span>
+</body>
+</html>
